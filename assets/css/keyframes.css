@@ -1,0 +1,37 @@
+@keyframes upTo {
+    from {
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes smallBig {
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.4);
+    }
+}
+
+@keyframes loadingLR {
+    from {
+        transform: translateX(-50%);
+    }
+    to{
+        transform: translateX(50%);
+    }
+}
+
+@keyframes loadingTD {
+    from {
+        transform: translateY(-50%);
+    }
+    to{
+        transform: translateY(50%);
+    }
+}

@@ -1,0 +1,4 @@
+-Home
+-Detail
+-hourly
+-Days in week

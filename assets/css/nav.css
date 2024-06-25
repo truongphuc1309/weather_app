@@ -1,0 +1,70 @@
+.nav {
+    position: fixed;
+    z-index: 9999;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    color: var(--white);
+    height: 60px;
+    background-color: var(--secondary);
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.nav-component-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.nav-component {
+    position: relative;
+    text-decoration: unset;
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    animation: upTo 0.5s linear;
+    border-bottom: solid 2px transparent;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.nav-component::after {
+    position: absolute;
+    content: "";
+    right: -10px;
+    left: -10px;
+    height: 100%;
+    background-color: var(--primary);
+    top: 220%;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+}
+
+.nav-component::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    ;
+    right: 0;
+    left: 0;
+    height: 40px;
+    background-color: transparent;
+}
+
+.nav-component.actived,
+.nav-component:hover {
+    transform: translateY(10px);
+}
+
+.nav-component.actived::after,
+.nav-component:hover::after {
+    top: 0;
+}

@@ -1,0 +1,75 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/*Main*/
+
+#main {
+    position: relative;
+    height: 100%;
+    width: 100% !important;
+}
+
+.weather-information {
+    min-width: 582px;
+    min-height: 410px;
+    background-color: var(--secondary-trans);
+    padding: 68px 60px;
+    color: var(--white);
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.weather-information:hover {
+    background-color: var(--secondary);
+    transition: all 0.4s ease-out;
+}
+
+.weather-location {
+    font-size: 6rem;
+}
+
+.weather-location i {
+    font-size: 70%;
+    transform: translateY(-16%);
+    margin-right: 4px;
+}
+
+.weather-date {
+    display: flex;
+    font-size: 2rem;
+}
+
+.weather-date i {
+    margin-right: 6px;
+}
+
+.weather-status-img {
+    margin-top: 20px;
+    animation: smallBig 0.8s linear alternate-reverse infinite;
+}
+
+.weather-status {
+    font-size: 3rem;
+}
+
+.weather-status-wrapper {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.temperature {
+    font-size: 20rem;
+    margin-left: 40px;
+}
+
+.temperature-feel {
+    font-size: 3rem;
+    margin-left: 40px;
+}

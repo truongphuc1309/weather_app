@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/keyframes.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-component-wrapper">
+                <a href="./index.html" class="nav-component actived">Now</a>
+                <a href="./hourly.html" class="nav-component">Hourly</a>
+                <a class="nav-component">Search</a>
+                <a class="nav-component">5 Days Next</a>
+                <a class="nav-component">Diagnistic</a>
+                <a class="nav-component">Warning</a>
+            </div>
+        </nav>
+
+        <div id="main">
+            <div class="weather-information loadingTD">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="weather-location"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="weather-date"><i class="fa-regular fa-calendar-days"></i></div>
+                            <img class="weather-status-img" src=""></img>
+                        </td>
+                        <td class="weather-information-right">
+                            <div class="temperature degree"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="weather-status">Sunny</p>
+                        </td>
+                        <td class="weather-information-right">
+                            <div class="temperature-feel degree"><span>Feels Like: </span></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/home.js" type="module"></script>
+</body>
+
+</html>

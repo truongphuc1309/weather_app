@@ -1,0 +1,76 @@
+:root{
+    --primary: #5b75d0;
+    --secondary: #ffffff34;
+    --loading: #728be5;
+    --loading2: #8fa3ec;
+    --secondary-trans:#8293d142; 
+    --white: #ccc;
+    --green: #00ba9d;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--primary);
+}
+
+body{
+    height: 100vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.degree{
+    position: relative;
+}
+
+.degree::after{
+    position: absolute;
+    content: "o";
+    width: 30%;
+    height: 30%;
+    font-size: 36%;
+}
+
+.loadingLR, .loadingTD {
+    position: relative;
+    overflow: hidden;
+}
+
+.loadingLR::after , .loadingLR::before,
+.loadingTD::after , .loadingTD::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.loadingLR::after,
+.loadingTD::after{
+    background-color: var(--loading);
+    z-index: 999;
+}
+
+.loadingLR::before{
+    background-image: linear-gradient(90deg, transparent, var(--loading2), transparent);
+    animation: loadingLR 1s ease-in-out alternate infinite;
+    z-index: 9999;
+}
+
+.loadingTD::before{
+    background-image: linear-gradient(180deg, transparent, var(--loading2), transparent);
+    animation: loadingTD 1s ease-in-out alternate infinite;
+    z-index: 9999;
+}
